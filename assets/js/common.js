@@ -25,4 +25,13 @@ $(function(){
     //      }
     //  return false;
     //  });
+
+    //スマホ時に電話リンク追加
+    var ua = navigator.userAgent;
+    if(ua.indexOf('iPhone') > 0 || ua.indexOf('Android') > 0){
+        $('.tel_link').each(function(){
+            var str = $(this).text();
+            $(this).html($('<a class="inline">').attr('href', 'tel:' + str.replace(/-/g, '')).append(str + '</a>'));
+        });
+    }
 });

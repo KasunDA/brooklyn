@@ -6,6 +6,14 @@
         </form>
     </section>
     <section class="section_block">
+        <h3 class="ttl_h3">Recent Post</h3>
+        <ul class="list list_archives">
+            <li><a href=""><span class="icon-triangle-right"></span>新作バッグ入荷しました。新作バッグ入荷しました。</a></li>
+            <li><a href=""><span class="icon-triangle-right"></span>新作バッグ入荷しました。</a></li>
+            <li><a href=""><span class="icon-triangle-right"></span>新作バッグ入荷しました。</a></li>
+        </ul>
+    </section>
+    <section class="section_block">
         <h3 class="ttl_h3">Archives</h3>
         <ul class="list list_archives">
             <li><a href=""><span class="icon-triangle-right"></span>2014.01</a></li>
@@ -21,7 +29,7 @@
             <dt>Time</dt>
             <dd>11:00～20:00</dd>
             <dt>Tel/Fax</dt>
-            <dd><a href="tel:092-843-8186">092-843-8186</a></dd>            
+            <dd class="tel_link">092-843-8186</a></dd>            
         </dl>
     </section>
     <section class="section_block">

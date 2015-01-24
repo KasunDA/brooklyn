@@ -12,9 +12,9 @@ $shop = "brooklyn";
     <div class="container">
         <div class="clm_main">
             <section class="section_block">
-                <h3 class="ttl_h3">News</h3>
+                <h1 class="ttl_h3">News</h1>
                 <ul class="list list_news">
-                    <li><a href=""><span class="indent"><time>2012.12.22</time><span>冬期休暇のお知らせ冬期休暇のお知らせ冬期休暇のお知らせ冬期休暇のお知らせ</span></span></a></li>
+                    <li><a href=""><span class="indent"><time>2012.12.22</time><span>冬期休暇のお知らせ冬期休暇のお知らせ冬期休暇のお知らせ冬期休暇のお知らせ冬期休暇のお知らせ冬期休暇のお知らせ冬期休暇のお知らせ冬期休暇のお知らせ冬期休暇のお知らせ冬期休暇のお知らせ冬期休暇のお知らせ冬期休暇のお知らせ</span></span></a></li>
                     <li><a href=""><span class="indent"><time>2012.12.22</time><span>冬期休暇のお知らせ</span></span></a></li>
                     <li><a href=""><span class="indent"><time>2012.12.22</time><span>冬期休暇のお知らせ</span></span></a></li>
                     <li><a href=""><span class="indent"><time>2012.12.22</time><span>冬期休暇のお知らせ</span></span></a></li>
