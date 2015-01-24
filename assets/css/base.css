@@ -56,16 +56,16 @@ a:hover {
 }
 
 ::selection {
-  background: #649812;
+  background: #01302c;
   color: #fff;
 }
 
 ::-moz-selection {
-  background: #649812;
+  background: #01302c;
   color: #fff;
 }
 
-/* ttl */
+/* top */
 .h1_top {
   font-size: 20px;
   font-size: 2rem;
@@ -166,7 +166,6 @@ h2, h3 {
   vertical-align: middle;
 }
 
-/* list_shop */
 .list_shop {
   text-align: center;
   margin-bottom: 30px;

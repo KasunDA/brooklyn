@@ -5,38 +5,7 @@
 @import "compass";
 @import "set";
 
-/* default */
-html {
-  font-size: 62.5%;
-  @include gothic;
-  line-height: 1;
-}
-body {
-  @include font-size(1.4);
-  color: $color_base;
-}
-a {
-  color: $color_base;
-  text-decoration: underline;
-  &:hover {
-    text-decoration: none;
-  }
-}
-::selection {
-  background: $color_point;
-  color: #fff;
-}
-::-moz-selection {
-  background: $color_point;
-  color: #fff;
-}
-/* ttl */
-h1 , h2 , h3 , h4 , h5 , h6 {
-
-}
-h1 {
-
-}
+/* top */
 .h1_top {
   @include font-size(2.0);
   @include gothic_bold;
@@ -116,8 +85,6 @@ h2 , h3 {
   display: table-cell;
   vertical-align: middle;
 }
-
-/* list_shop */
 .list_shop {
   text-align: center;
   margin-bottom: 30px;
@@ -132,13 +99,11 @@ h2 , h3 {
     }
   }
 }
-
 .copyright {
   @include font-size(0.9);
   text-align: center;
   margin-bottom: 10px;
 }
-
 @media screen and (max-width: 979px) {
   /* 979px以下用（タブレット用）の記述 */
 }
@@ -151,3 +116,9 @@ h2 , h3 {
 @media screen and (max-width: 479px) {
   /* 479px以下用（スマートフォン用）の記述 */
 }
+
+
+
+
+
+

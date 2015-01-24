@@ -3,9 +3,9 @@
 <head>
 <meta charset="utf-8">
 <?php if($home == true ) { ?>
-<title>最上級の味と品質-すこやか工房「オリーブハート」</title>
+<title>福岡市早良区西新にあるセレクトショップのBROOKLYN(ブルックリン)</title>
 <?php } else { ?>
-<title><?php echo $title; ?>｜最上級の味と品質-すこやか工房「オリーブハート」</title>
+<title><?php echo $title; ?>｜福岡市早良区西新にあるセレクトショップのBROOKLYN(ブルックリン)</title>
 <?php } ?>
 <meta name="Keywords" content="<?php echo $keywords; ?>">
 <meta name="Description" content="<?php echo $description; ?>">
@@ -13,29 +13,38 @@
 <meta name="format-detection" content="telephone=no">
 <meta name="format-detection" content="email=no">
 <?php if($home == true ) { ?>
-<meta property="og:title" content="最上級の味と品質-すこやか工房「オリーブハート」" >
+<meta property="og:title" content="福岡市早良区西新にあるセレクトショップのBROOKLYN(ブルックリン)" >
 <?php } else { ?>
-<meta property="og:title" content="<?php echo $title; ?>｜最上級の味と品質-すこやか工房「オリーブハート」" >
+<meta property="og:title" content="<?php echo $title; ?>｜福岡市早良区西新にあるセレクトショップのBROOKLYN(ブルックリン)" >
 <?php } ?>
 <meta property="og:description" content="<?php echo $description; ?>" >
 <?php if($home == true ) { ?>
-<meta property="og:image" content="http://www.sukoyaka.co.jp/cp/olive_heart/assets/img/common/ogp.png" >
+<meta property="og:image" content="/assets/img/common/ogp.png" >
 <?php } else { ?>
 <?php } ?>
 <meta property="og:type" content="website">
-<meta property="og:site_name" content="最上級の味と品質-すこやか工房「オリーブハート」" >
+<meta property="og:site_name" content="福岡市早良区西新にあるセレクトショップのBROOKLYN(ブルックリン)" >
 <meta property="fb:app_id" content="1557803174470199" >
 <?php if($home == true ) { ?>
-<link rel="canonical" href="http://www.sukoyaka.co.jp/cp/olive_heart/">
+<link rel="canonical" href="000000000000">
 <?php } else { ?>
 <?php } ?>
 <link href="/assets/css/normalize.css" rel="stylesheet" type="text/css">
 <link href="/assets/css/util.css" rel="stylesheet" type="text/css">
+<?php if($home == true ) { ?>
 <link href="/assets/css/base.css" rel="stylesheet" type="text/css">
+<?php } else { ?>
+<link href="/assets/css/style.css" rel="stylesheet" type="text/css">
+<?php } ?>
+<link rel="stylesheet" href="http://i.icomoon.io/public/temp/aa147e695b/brooklyn/style.css">
 <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="/favicon.ico">
 <script src="/assets/js/jquery-1.8.3.min.js"></script>
 <script src="/assets/js/jquery.tile.js"></script>
 <script src="/assets/js/common.js"></script>
+<?php if($map == true ) { ?>
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+<script src="/assets/js/map.js"></script>
+<?php } ?>
 <script src="//use.typekit.net/lxg8uzz.js"></script>
 <script>try{Typekit.load();}catch(e){}</script>
 <!--[if lt IE 9]>
@@ -47,6 +56,6 @@
     m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
     })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-    ga('create', 'UA-9290610-1', 'sukoyaka.co.jp');
+    ga('create', 'UA-000000000000', '000000000000');
     ga('send', 'pageview');
 </script>
