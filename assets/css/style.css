@@ -471,6 +471,7 @@ article img {
 }
 .block_bolg img {
   width: 100%;
+  height: auto;
 }
 .block_bolg time {
   display: block;
@@ -866,7 +867,13 @@ footer {
   .nav_global li:first-child a {
     border: none;
   }
-  .nav_global li.active a {
+  .nav_global li.current_page_item a {
+    border-bottom: 2px solid #333333;
+  }
+  .nav_global li.current-menu-item a {
+    border-bottom: 2px solid #333333;
+  }
+  .nav_global li.current-post-parent a {
     border-bottom: 2px solid #333333;
   }
   .nav_global a {

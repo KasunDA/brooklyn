@@ -31,20 +31,12 @@
 <?php } ?>
 <link href="/assets/css/normalize.css" rel="stylesheet" type="text/css">
 <link href="/assets/css/util.css" rel="stylesheet" type="text/css">
-<?php if($home == true ) { ?>
-<link href="/assets/css/base.css" rel="stylesheet" type="text/css">
-<?php } else { ?>
+<link href="/assets/css/font.css" rel="stylesheet" type="text/css">
 <link href="/assets/css/style.css" rel="stylesheet" type="text/css">
-<?php } ?>
-<link rel="stylesheet" href="http://i.icomoon.io/public/temp/aa147e695b/brooklyn/style.css">
 <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="/favicon.ico">
 <script src="/assets/js/jquery-1.8.3.min.js"></script>
 <script src="/assets/js/jquery.tile.js"></script>
 <script src="/assets/js/common.js"></script>
-<?php if($map == true ) { ?>
-<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
-<script src="/assets/js/map.js"></script>
-<?php } ?>
 <script src="//use.typekit.net/lxg8uzz.js"></script>
 <script>try{Typekit.load();}catch(e){}</script>
 <!--[if lt IE 9]>

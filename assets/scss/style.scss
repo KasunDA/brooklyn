@@ -361,6 +361,7 @@ article {
     margin-bottom: 15px;
   } img {
     width: 100%;
+    height: auto;
   }
   time {
     display: block;
@@ -701,7 +702,17 @@ footer {
       &:first-child a {
         border: none;
       }
-      &.active {
+      &.current_page_item {
+        a {
+          border-bottom :2px solid $color_base;
+        }
+      }
+      &.current-menu-item {
+        a {
+          border-bottom :2px solid $color_base;
+        }
+      }
+      &.current-post-parent {
         a {
           border-bottom :2px solid $color_base;
         }
