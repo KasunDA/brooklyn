@@ -173,14 +173,6 @@ article h4:before {
   background: #333333;
   content: "";
 }
-article img {
-  box-sizing: border-box;
-  width: 100%;
-  height: auto;
-  padding: 10px;
-  background-image: linear-gradient(45deg, #ffffff, #ffffff 48%, #333333 48%, #333333 52%, #ffffff 52%, #ffffff 100%);
-  background-size: 10px 10px;
-}
 
 /* header */
 .header_top {
@@ -270,16 +262,17 @@ article img {
   z-index: 9999;
 }
 
-#search_form.nav_search {
+#searchform.nav_search {
+  margin-top: 10px;
   margin-bottom: 15px;
   padding: 0;
 }
-#search_form.nav_search #search_txt {
+#searchform.nav_search #s {
   width: 80%;
   height: 40px;
   padding: 0 5px;
 }
-#search_form.nav_search #search_submit {
+#searchform.nav_search #search_submit {
   width: 42px;
   height: 42px;
   font-size: 14px;
@@ -330,17 +323,25 @@ article img {
 .nav_sns li a span {
   line-height: 30px !important;
 }
-.nav_sns .nav_sns-rss a:hover {
+
+.nav_sns-rss a:hover {
   background: #ff9900;
 }
-.nav_sns .nav_sns-contact a:hover {
+
+.nav_sns-contact a:hover {
   background: #d23534;
 }
-.nav_sns .nav_sns-twitter a:hover {
+
+.nav_sns-twitter a:hover, .box_sns .sns_twitter a:hover {
   background: #67aadd;
 }
-.nav_sns .nav_sns-facebook a:hover {
+
+.nav_sns-facebook a:hover, .box_sns .sns_facebook a:hover {
   background: #3b5998;
+}
+
+.box_sns .sns_google a:hover {
+  background: #dd4b39;
 }
 
 .visual_main img {
@@ -380,10 +381,14 @@ article img {
 .list_table dt:nth-of-type(odd) {
   background: #f9f9f9;
 }
+.list_table dt span {
+  color: #7c1716;
+}
 .list_table dd {
   padding-bottom: 15px;
   margin-bottom: 0;
   padding-left: 30px;
+  padding-right: 15px;
 }
 .list_table dd:nth-of-type(odd) {
   background: #f9f9f9;
@@ -413,6 +418,15 @@ article img {
 }
 
 /* clm_main */
+.clm_main .clm_blog-right article img {
+  box-sizing: border-box;
+  width: 100%;
+  height: auto;
+  padding: 10px;
+  background-image: linear-gradient(45deg, #ffffff, #ffffff 48%, #333333 48%, #333333 52%, #ffffff 52%, #ffffff 100%);
+  background-size: 10px 10px;
+}
+
 .clm_blog-left {
   display: none;
 }
@@ -438,6 +452,10 @@ article img {
 }
 .list_news time {
   margin-right: 20px;
+}
+
+.list_brand {
+  font-style: italic;
 }
 
 .wrapper_blog {
@@ -492,7 +510,7 @@ a:hover .icon_new {
 
 .icon_new {
   position: absolute;
-  z-index: 9999;
+  z-index: 100;
   right: 20px;
   top: -10px;
   width: 38px;
@@ -589,6 +607,77 @@ article a .icon-new-tab {
   transition: 0.2s ease;
 }
 
+/* contct */
+.wpcf7-form * {
+  margin-bottom: 0;
+}
+.wpcf7-form img {
+  width: auto;
+  height: auto;
+}
+.wpcf7-form input[type=text], .wpcf7-form input[type=tel], .wpcf7-form input[type=email] {
+  box-sizing: border-box;
+  width: 100%;
+}
+.wpcf7-form textarea {
+  width: 100%;
+  box-sizing: border-box;
+}
+.wpcf7-form .ajax-loader {
+  display: none;
+}
+.wpcf7-form .list_table {
+  margin-bottom: 30px;
+}
+.wpcf7-form span.wpcf7-not-valid-tip {
+  color: #7c1716;
+}
+.wpcf7-form div.wpcf7-validation-errors, .wpcf7-form div.wpcf7-mail-sent-ok {
+  text-align: center;
+}
+
+/* ソーシャルボタン */
+.box_sns {
+  border-top: 1px dotted #cccccc;
+  border-bottom: 1px dotted #cccccc;
+  padding: 10px 0;
+  *zoom: 1;
+  text-align: center;
+}
+.box_sns:before, .box_sns:after {
+  content: " ";
+  display: table;
+}
+.box_sns:after {
+  clear: both;
+}
+.box_sns li {
+  display: inline-block;
+  margin-left: 20px;
+}
+.box_sns li:first-child {
+  margin-left: 0;
+}
+.box_sns a {
+  background: #333333;
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  text-align: center;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 20px;
+  font-size: 2rem;
+}
+.box_sns a span {
+  line-height: 40px !important;
+}
+.box_sns a:hover {
+  transform: scale(1.3, 1.3);
+}
+
 /* clm_side */
 .clm_side .ttl_h3 {
   border-width: 1px;
@@ -627,24 +716,25 @@ article a .icon-new-tab {
   width: 100%;
 }
 
-#search_form {
+#searchform {
   *zoom: 1;
   background: #fff;
   border: 1px solid #333333;
   padding: 3px;
 }
-#search_form:before, #search_form:after {
+#searchform:before, #searchform:after {
   content: " ";
   display: table;
 }
-#search_form:after {
+#searchform:after {
   clear: both;
 }
 
-#search_txt {
+#s {
   float: left;
   border: 0;
   padding: 3px;
+  width: 80%;
 }
 
 #search_submit {
@@ -820,6 +910,10 @@ footer {
   .list_table dd:nth-of-type(odd) {
     background: #f9f9f9;
   }
+
+  .wpcf7-form input[type=text], .wpcf7-form input[type=tel], .wpcf7-form input[type=email] {
+    width: auto;
+  }
 }
 @media screen and (min-width: 980px) {
   /* 979px以上用（pc用）の記述 */
@@ -852,8 +946,12 @@ footer {
     padding: 0;
   }
 
-  #search_form.nav_search {
+  #searchform.nav_search {
     display: none;
+  }
+
+  #s {
+    width: auto;
   }
 
   .nav_global {

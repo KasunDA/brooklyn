@@ -2,18 +2,12 @@
 <html lang="ja">
 <head>
 <meta charset="utf-8">
-<title>福岡市早良区西新にあるセレクトショップのBROOKLYN(ブルックリン)</title>
+<title>BROOKLYN(ブルックリン)</title>
 <meta name="Keywords" content="<?php echo $keywords; ?>">
 <meta name="Description" content="<?php echo $description; ?>">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
 <meta name="format-detection" content="telephone=no">
 <meta name="format-detection" content="email=no">
-<meta property="og:title" content="福岡市早良区西新にあるセレクトショップのBROOKLYN(ブルックリン)" >
-<meta property="og:description" content="<?php echo $description; ?>" >
-<meta property="og:image" content="/assets/img/common/ogp.png" >
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="福岡市早良区西新にあるセレクトショップのBROOKLYN(ブルックリン)" >
-<meta property="fb:app_id" content="1557803174470199" >
 <link rel="canonical" href="000000000000">
 <link href="/assets/css/normalize.css" rel="stylesheet" type="text/css">
 <link href="/assets/css/util.css" rel="stylesheet" type="text/css">

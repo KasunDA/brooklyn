@@ -1,25 +1,11 @@
 <div class="clm_side">
     <section class="section_block ">
-        <form method="get" id="search_form" action="">
-            <input type="text" placeholder="Search..." name="search_txt" id="search_txt">
-            <button type="submit" id="search_submit"><span class="icon-search"></span></button>
+        <form role="search" method="get" id="searchform" class="searchform" action="http://brooklyn/brooklyn/">
+            <div>
+                <input type="text" placeholder="Search..." name="s" id="s">
+                <button type="submit" id="search_submit"><span class="icon-search"></span></button>
+            </div>
         </form>
-    </section>
-    <section class="section_block">
-        <h3 class="ttl_h3">Recent Post</h3>
-        <ul class="list list_archives">
-            <li><a href=""><span class="icon-triangle-right"></span>新作バッグ入荷しました。新作バッグ入荷しました。</a></li>
-            <li><a href=""><span class="icon-triangle-right"></span>新作バッグ入荷しました。</a></li>
-            <li><a href=""><span class="icon-triangle-right"></span>新作バッグ入荷しました。</a></li>
-        </ul>
-    </section>
-    <section class="section_block">
-        <h3 class="ttl_h3">Archives</h3>
-        <ul class="list list_archives">
-            <li><a href=""><span class="icon-triangle-right"></span>2014.01</a></li>
-            <li><a href=""><span class="icon-triangle-right"></span>2014.01</a></li>
-            <li><a href=""><span class="icon-triangle-right"></span>2014.01</a></li>
-        </ul>
     </section>
     <section class="section_block">
         <h3 class="ttl_h3">Shop Info</h3>

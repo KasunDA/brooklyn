@@ -1,8 +1,12 @@
 $(window).load(function(){
     $(".block_bolg").tile(3);
+    $(".txt_blog").tile(3);
+    $(".ttl_blog").tile(3);
     var ua = navigator.userAgent;
     if(ua.indexOf('iPhone') > 0 || ua.indexOf('Android') > 0){
-       $(".block_bolg").tile(2); 
+       $(".block_bolg").tile(2);
+       $(".txt_blog").tile(2);
+       $(".ttl_blog").tile(2);
     }
 });
 $(function(){
@@ -39,10 +43,14 @@ $(function(){
         var _width = $(window).width();//デバイス（ウィンドウ）幅を取得
         if(_width <= 768){
             //デバイス（ウィンドウ）幅が768px以下の時の処理
+            $(".txt_blog").tile(2); 
             $(".block_bolg").tile(2);
+            $(".ttl_blog").tile(2);
         }else{
             //『デバイス（ウィンドウ）幅が768px以下』以外のときの時の処理  
             $(".block_bolg").tile(3);
+            $(".txt_blog").tile(3);
+            $(".ttl_blog").tile(3);
         }
     }//init
 });

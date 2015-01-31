@@ -1,37 +1,22 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
 <meta charset="utf-8">
 <?php if (is_front_page()): ?>
 <title><?php bloginfo('name'); ?></title>
 <?php else: ?>
-<title><?php bloginfo('name'); ?>｜福岡市早良区西新にあるセレクトショップのBROOKLYN(ブルックリン)</title>
+<title><?php wp_title('',true); ?> | <?php bloginfo('name'); ?></title>
 <?php endif; ?>
-<meta name="Keywords" content="<?php echo $keywords; ?>">
-<meta name="Description" content="<?php bloginfo('description'); ?>">
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
-<meta name="format-detection" content="telephone=no">
-<meta name="format-detection" content="email=no">
-<?php if (is_front_page()): ?>
-<meta property="og:title" content="福岡市早良区西新にあるセレクトショップのBROOKLYN(ブルックリン)" >
-<?php else: ?>
-<meta property="og:title" content="<?php bloginfo('name'); ?>｜福岡市早良区西新にあるセレクトショップのBROOKLYN(ブルックリン)" >
-<?php endif; ?>
-<meta property="og:description" content="<?php echo $description; ?>" >
-<?php if (is_front_page()): ?>
-<meta property="og:image" content="/assets/img/common/ogp.png" >
-<?php endif; ?>
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="福岡市早良区西新にあるセレクトショップのBROOKLYN(ブルックリン)" >
-<meta property="fb:app_id" content="1557803174470199" >
+<?php get_template_part('ogp'); ?>
 <?php if (is_front_page()): ?>
 <link rel="canonical" href="000000000000">
 <?php endif; ?>
+<link rel="alternate" type="application/rss+xml" title="RSS Feed" href="<?php echo home_url('/feed/') ?>">
 <link href="/assets/css/normalize.css" rel="stylesheet" type="text/css">
 <link href="/assets/css/util.css" rel="stylesheet" type="text/css">
 <link href="/assets/css/font.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="http://i.icomoon.io/public/temp/c3a49f52c3/brooklyn/style.css">
 <link href="/assets/css/style.css" rel="stylesheet" type="text/css">
-<link rel="stylesheet" href="http://i.icomoon.io/public/temp/aa147e695b/brooklyn/style.css">
 <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="/favicon.ico">
 <script src="/assets/js/jquery-1.8.3.min.js"></script>
 <script src="/assets/js/jquery.tile.js"></script>
@@ -53,6 +38,9 @@
 
     ga('create', 'UA-000000000000', '000000000000');
     ga('send', 'pageview');
+</script>
+<script src="https://apis.google.com/js/platform.js" async defer>
+  {lang: 'ja'}
 </script>
 <?php wp_head(); ?>
 </head>

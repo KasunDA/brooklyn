@@ -1,12 +1,4 @@
-<?php
-$title = "ああ";
-$keywords = "";
-$description = "";
-$home = false;
-$shopTop = true;
-$shop = "brooklyn";
-?>
-<?php require_once(getenv('DOCUMENT_ROOT')."/wp-content/themes/brooklyn/html-head.php"); ?>
+<?php get_template_part('html-head'); ?>
 <body>
     <?php get_header(); ?>
     <div class="container">

@@ -108,14 +108,6 @@ article {
       content: "";
     }
   }
-  img {
-    box-sizing:border-box;
-    width: 100%;
-    height: auto;
-    padding: 10px;
-    background-image: linear-gradient(45deg, #ffffff ,#ffffff 48%, #333333 48%, #333333 52%, #ffffff 52%, #ffffff 100%);
-    background-size: 10px 10px;
-  }
 }
 
 /* header */
@@ -181,10 +173,11 @@ article {
   box-sizing:border-box;
   z-index: 9999;
 }
-#search_form.nav_search {
+#searchform.nav_search {
+  margin-top: 10px;
   margin-bottom: 15px;
   padding: 0;
-  #search_txt {
+  #s {
     width: 80%;
     height: 40px;
     padding: 0 5px;
@@ -233,18 +226,21 @@ article {
       }
     }
   }
-  .nav_sns-rss a:hover {
-    background: #ff9900;
-  }
-  .nav_sns-contact a:hover {
-    background: #d23534;
-  }
-  .nav_sns-twitter a:hover {
-    background: #67aadd;
-  }
-  .nav_sns-facebook a:hover {
-    background: #3b5998;
-  }
+}
+.nav_sns-rss a:hover {
+  background: #ff9900;
+}
+.nav_sns-contact a:hover {
+  background: #d23534;
+}
+.nav_sns-twitter a:hover , .box_sns .sns_twitter a:hover {
+  background: #67aadd;
+}
+.nav_sns-facebook a:hover , .box_sns .sns_facebook a:hover {
+  background: #3b5998;
+}
+.box_sns .sns_google a:hover {
+  background: #dd4b39;
 }
 .visual_main {
   img {
@@ -283,11 +279,15 @@ article {
     &:nth-of-type(odd) {
       background: #f9f9f9;
     }
+    span {
+      color: $color_point;
+    }
   }
   dd {
     padding-bottom: 15px;
     margin-bottom: 0;
     padding-left: 30px;
+    padding-right: 15px;
     &:nth-of-type(odd) {
       background: #f9f9f9;
     }
@@ -310,7 +310,18 @@ article {
 }
 /* clm_main */
 .clm_main {
-
+  .clm_blog-right {
+    article {
+      img {
+        box-sizing:border-box;
+        width: 100%;
+        height: auto;
+        padding: 10px;
+        background-image: linear-gradient(45deg, #ffffff ,#ffffff 48%, #333333 48%, #333333 52%, #ffffff 52%, #ffffff 100%);
+        background-size: 10px 10px;
+      }
+    }
+  }
 }
 .clm_blog-left {
   display: none;
@@ -339,6 +350,9 @@ article {
   time {
     margin-right: 20px;
   }
+}
+.list_brand {
+  font-style: italic;
 }
 .wrapper_blog {
   @include clearfix;
@@ -381,7 +395,7 @@ a:hover .icon_new {
 }
 .icon_new {
   position: absolute;
-  z-index: 9999;
+  z-index: 100;
   right: 20px;
   top:-10px;
   width: 38px;
@@ -407,8 +421,8 @@ a:hover .icon_new {
 }
 .post_meta {
   @include clearfix;
-  border-top: 1px dotted #cccccc;
-  border-bottom: 1px dotted #cccccc;
+  border-top:1px dotted lighten( $color_base, 60% );
+  border-bottom:1px dotted lighten( $color_base, 60% );
   li {
     float: left;
     margin: 0 20px 0 0;
@@ -461,6 +475,71 @@ article {
     transition: 0.2s ease;
   }
 }
+/* contct */
+.wpcf7-form {
+  & * {
+    margin-bottom: 0
+  }
+  img {
+    width: auto;
+    height: auto;
+  }
+  input[type=text] , input[type=tel] , input[type=email] {
+    box-sizing: border-box;
+    width: 100%;
+  }
+  textarea {
+    width: 100%;
+    box-sizing:border-box;
+  }
+  .ajax-loader {
+    display: none;
+  }
+  .list_table {
+    margin-bottom: 30px;
+  }
+  span.wpcf7-not-valid-tip {
+    color: $color_point;
+  }
+  div.wpcf7-validation-errors , div.wpcf7-mail-sent-ok {
+    text-align: center;
+  }
+}
+/* ソーシャルボタン */
+.box_sns {
+  border-top:1px dotted lighten( $color_base, 60% );
+  border-bottom:1px dotted lighten( $color_base, 60% );
+  padding: 10px 0 ;
+  @include clearfix;
+  text-align: center;
+  li {
+    display: inline-block;
+    margin-left: 20px;
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+  a {
+      background: $color_base;
+      text-decoration: none;
+      color: #fff;
+      display: block;
+      text-align: center;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      line-height: 40px;
+      @include font-size(2.0);
+      span {
+        line-height: 40px !important;
+      }
+      &:hover {
+        transform: scale(1.3,1.3);
+      }
+    }
+}
+
+
 
 /* clm_side */
 .clm_side {
@@ -505,16 +584,17 @@ article {
     width: 100%;
   }
 }
-#search_form {
+#searchform {
   @include clearfix;
   background: #fff;
   border: 1px solid $color_base;
   padding: 3px;
 }
-#search_txt {
+#s {
   float: left;
   border: 0;
   padding: 3px;
+  width: 80%;
 }
 #search_submit {
   float: right;
@@ -662,6 +742,11 @@ footer {
       }
     }
   }
+  .wpcf7-form {
+    input[type=text] , input[type=tel] , input[type=email] {
+      width: auto;
+    }
+  }
 }
 
 @media screen and (min-width: 980px) {
@@ -690,8 +775,11 @@ footer {
     width: auto;
     padding: 0;
   }
-  #search_form.nav_search {
+  #searchform.nav_search {
     display: none;
+  }
+  #s {
+    width: auto;
   }
   .nav_global {
     float: left;

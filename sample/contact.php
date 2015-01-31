@@ -22,16 +22,28 @@ $shop = "brooklyn";
                 <article>
                     <h4>お問い合わせフォーム</h4>
                     <form action="contact_submit" method="get" accept-charset="utf-8">
-                        <dl class="list list_table">
-                            <dt>住所</dt>
-                            <dd>福岡市早良区西新5-4-20　<a href="https://www.google.co.jp/maps/place/%E3%80%92814-0002+%E7%A6%8F%E5%B2%A1%E7%9C%8C%E7%A6%8F%E5%B2%A1%E5%B8%82%E6%97%A9%E8%89%AF%E5%8C%BA%E8%A5%BF%E6%96%B0%EF%BC%95%E4%B8%81%E7%9B%AE%EF%BC%94%E2%88%92%EF%BC%92%EF%BC%90/@33.5816187,130.3569246,17z/data=!3m1!4b1!4m2!3m1!1s0x354193a47bdf29cf:0xfcb548c1e541b70" target="_blank">Googlemap<span class="icon-new-tab"></span></a></dd>
-                            <dt>TEL/FAX</dt>
-                            <dd class="tel_link">092-843-8186</dd>
-                            <dt>営業時間</dt>
-                            <dd>11:00～20:00</dd>
-                            <dt>定休日</dt>
-                            <dd>不定休</dd>
-                        </dl>
+ 
+
+<dl class="list list_table">
+    <dt>Name<span>*</span></dt>
+    <dd>[text* your-name]</dd>
+    <dt>Kana<span>*</span></dt>
+    <dd>[text* furigana]</dd>
+    <dt>Gender<span>*</span></dt>
+    <dd>[radio gender use_label_element "男性" "女性"]</dd>
+    <dt>Tel</dt>
+    <dd>[tel tel]</dd>
+    <dt>Mailaddress<span>*</span></dt>
+    <dd>[email* your-email]</dd>
+    <dt>Title<span>*</span></dt>
+    <dd>[text your-subject]</dd>
+    <dt>Message<span>*</span></dt>
+    <dd>[textarea your-message]</dd>
+</dl>
+                        [submit class:btn_send]
+
+
+
                         <input type="submit" value="送信する" class="btn_send">
                     </form>
 

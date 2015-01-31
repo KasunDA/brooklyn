@@ -12,10 +12,7 @@
         <h1 class="ttl_h2"><a href="/<?php echo $shop?>/">BROOKLYN</a></h1>
         <p class="nav_menu"><span class="icon-menu"></span></p>
         <nav class="header_nav"> 
-            <form method="get" id="search_form" class="nav_search" action="">
-                <input type="text" placeholder="Search..." name="search_txt" id="search_txt">
-                <button type="submit" id="search_submit"><span class="icon-search"></span></button>
-            </form>
+            <?php echo get_search_form(); ?>
             <ul class="nav_global">
                 <li class="active"><a href="/<?php echo $shop?>/">Top</a></li>
                 <li><a href="/<?php echo $shop?>/news/">News</a></li>
