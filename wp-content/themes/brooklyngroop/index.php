@@ -17,6 +17,7 @@
 <script src="/assets/js/jquery-1.8.3.min.js"></script>
 <script src="/assets/js/jquery.tile.js"></script>
 <script src="/assets/js/common.js"></script>
+<script src="/assets/js/top.js"></script>
 <script src="//use.typekit.net/lxg8uzz.js"></script>
 <script>try{Typekit.load();}catch(e){}</script>
 <!--[if lt IE 9]>
@@ -34,27 +35,21 @@
 <body>
     <div class="container">
         <div class="visual">
-            <div class="box_brooklyn box ratio-1_1 f_left">
-                <div class="inner">
-                    <div class="table">
-                        <a href="/brooklyn/">BROOKLYN</a> 
-                    </div>    
-                </div>
+            <div class="box_brooklyn box f_left">
+                <a href="/brooklyn/">BROOKLYN</a> 
             </div>
-            <div class="box_lotus box ratio-1_1 f_right">
-                <div class="inner">
-                    <div class="table">
-                        <a href="/lotus/">LOTUS</a>
-                    </div>
-                </div>
+            <div class="box_lotus box f_right">
+                <a href="/lotus/">LOTUS</a>
             </div>  
         </div>
-        <h1 class="h1_top">BROOKLYN GROOP</h1>
-        <ul class="list_shop">
-            <li><a href="/brooklyn/">BROOKLYN</a></li>
-            <li><a href="/lotus/">LOTUS</a></li>
-        </ul>
-        <p class="copyright">&copy; BROOKLYN GROOP. All rights reserved.</p>
+        <footer>
+            <h1 class="h1_top">BROOKLYN GROOP</h1>
+            <ul class="list_shop">
+                <li><a href="/brooklyn/">BROOKLYN</a></li>
+                <li><a href="/lotus/">LOTUS</a></li>
+            </ul>
+            <p class="copyright">&copy; BROOKLYN GROOP. All rights reserved.</p>             
+        </footer>
     </div>
 </body>
 </html>

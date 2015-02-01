@@ -10,10 +10,9 @@ $(window).load(function(){
     }
 });
 $(function(){
-     $(function(){
-        $(".nav_menu").on("click", function() {
-            $(this).next().slideToggle();
-        });
+    //menuアコーディオン
+    $(".nav_menu").on("click", function() {
+        $(this).next().slideToggle();
     });
     /*ページトップ*/
     var pagetop = $('.pagetop');
