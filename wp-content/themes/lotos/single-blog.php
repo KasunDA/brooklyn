@@ -3,10 +3,12 @@
     <?php get_header(); ?>
     <div class="container">
         <div class="clm_main clm_blog">
-            <div class="clm_blog-left">
-                <h1 class="ttl_h2-blog"><img src="/assets/img/blog/ttl_brooklyn.png" width="149" alt=""></h1>
-                <p>福岡市早良区西新にある<br>
-                ブルックリンのブログです。<br>
+            <div class="clm_blog-left">    
+                <h1 class="ttl_h2-blog">
+                    <img src="/assets/img/blog/ttl_lotus.png" width="89" alt="ブログ"><br> 
+                </h1>
+                <p>福岡市中央区今泉にある<br>
+                ロータスのブログです。<br>
                 トップス、ボトムスから<br>
                 バッグ、小物まで幅広く<br>
                 紹介させていただきます。</p>

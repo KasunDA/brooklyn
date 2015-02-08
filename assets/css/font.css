@@ -59,6 +59,10 @@
 	content: "\ea34";
 }
 
+.icon-google-plus:before {
+	content: "\ea88";
+}
+
 .icon-facebook:before {
 	content: "\ea8c";
 }
@@ -70,4 +74,3 @@
 .icon-feed2:before {
 	content: "\ea94";
 }
-

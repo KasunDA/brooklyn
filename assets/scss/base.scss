@@ -5,6 +5,32 @@
 @import "compass";
 @import "set";
 
+/* default */
+html {
+  font-size: 62.5%;
+  @include gothic;
+  line-height: 1;
+}
+body {
+  @include font-size(1.4);
+  color: $color_base;
+}
+a {
+  color: $color_base;
+  text-decoration: underline;
+  &:hover {
+    text-decoration: none;
+  }
+}
+::selection {
+  background: $color_brooklyn;
+  color: #fff;
+}
+::-moz-selection {
+  background: $color_brooklyn;
+  color: #fff;
+}
+
 .container {
   padding: 4px 4px 0 4px;
 }

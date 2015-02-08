@@ -4,7 +4,7 @@
     <div class="container">
         <div class="clm_main">
             <section class="section_block">
-                <h1 class="ttl_h3"><?php single_cat_title(); ?></h1>
+                <h1 class="ttl_h3">タグ : <?php single_cat_title(); ?></h1>
                 <?php if(is_category('news')): ?>
                 <ul class="list list_news">
                 <?php else: ?>
@@ -22,9 +22,9 @@
                 </ul>
                 <?php else: ?>
                 </div>
-                <?php endif; ?>
-                <?php if(function_exists('wp_pagenavi')) { wp_pagenavi(); } ?>
-            </section> 
+                <?php endif; ?>   
+            </section>
+            <?php if(function_exists('wp_pagenavi')) { wp_pagenavi(); } ?>
         </div>
         <?php if(is_category('news')): 
             get_sidebar('news');

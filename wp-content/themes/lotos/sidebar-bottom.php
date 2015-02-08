@@ -1,0 +1,16 @@
+<section class="section_block">
+    <h3 class="ttl_h3">Shop Info</h3>
+    <dl class="list list_shop-info">
+        <dt>Access</dt>
+        <dd>福岡市中央区今泉1-19-10</dd>
+        <dt>Time</dt>
+        <dd>11:00～20:00</dd>
+        <dt>Tel/Fax</dt>
+        <dd class="tel_link">092-751-0606</a></dd>            
+    </dl>
+</section>
+<section class="section_block">
+    <ul class="list_bnr">
+        <li><a href="/brooklyn/"><img src="/assets/img/common/bnr_brooklyn.png" width="200" alt="ブルックリン"></a></li>
+    </ul>   
+</section> 

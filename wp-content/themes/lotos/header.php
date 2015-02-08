@@ -14,7 +14,7 @@
         </div>
     </div>
     <section class="header_bottom">
-        <h1 class="ttl_h2"><a href="<?php echo home_url('/') ?>">BROOKLYN</a></h1>
+        <h1 class="ttl_h2"><a href="<?php echo home_url('/') ?>">LOTUS</a></h1>
         <p class="nav_menu"><span class="icon-menu"></span></p>
         <nav class="header_nav"> 
             <form role="search" method="get" id="searchform" class="searchform nav_search" action="http://brooklyn/brooklyn/">

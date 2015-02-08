@@ -78,28 +78,3 @@ $color_lotus: rgba(13, 69, 95, 1);
 @mixin mincho {
   font-family: "游明朝","YuMincho","ヒラギノ明朝 ProN W6", "HiraMinProN-W6", "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝", serif;
 }
-/* default */
-html {
-  font-size: 62.5%;
-  @include gothic;
-  line-height: 1;
-}
-body {
-  @include font-size(1.4);
-  color: $color_base;
-}
-a {
-  color: $color_base;
-  text-decoration: underline;
-  &:hover {
-    text-decoration: none;
-  }
-}
-::selection {
-  background: $color_brooklyn;
-  color: #fff;
-}
-::-moz-selection {
-  background: $color_brooklyn;
-  color: #fff;
-}

@@ -12,7 +12,7 @@
 <link href="/assets/css/normalize.css" rel="stylesheet" type="text/css">
 <link href="/assets/css/util.css" rel="stylesheet" type="text/css">
 <link href="/assets/css/font.css" rel="stylesheet" type="text/css">
-<link href="/assets/css/style-brooklyn.css" rel="stylesheet" type="text/css">
+<link href="/assets/css/style-lotus.css" rel="stylesheet" type="text/css">
 <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="/favicon.ico">
 <script src="/assets/js/jquery-1.8.3.min.js"></script>
 <script src="/assets/js/jquery.tile.js"></script>

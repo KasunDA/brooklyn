@@ -22,9 +22,9 @@
                 </ul>
                 <?php else: ?>
                 </div>
-                <?php endif; ?>
-                <?php if(function_exists('wp_pagenavi')) { wp_pagenavi(); } ?>
-            </section> 
+                <?php endif; ?>   
+            </section>
+            <?php if(function_exists('wp_pagenavi')) { wp_pagenavi(); } ?>
         </div>
         <?php if(is_category('news')): 
             get_sidebar('news');
