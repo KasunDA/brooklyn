@@ -265,10 +265,20 @@ article {
 .nav_sns-google a:hover , .box_sns .sns_google a:hover {
   background: #dd4b39;
 }
-
+.visual_main-wrapper {
+  padding: 0 20px;
+}
 .visual_main {
+  position: relative;
+
+  li {
+    position: absolute;
+    left:0;
+    top: 0;
+  }
   img {
     width: 100%;
+    height: auto;
   }
 }
 .list {
@@ -846,7 +856,7 @@ footer {
           border-bottom :2px solid $color_base;
         }
       }
-      &.current-post-parent {
+      &.current-post-ancestor {
         a {
           border-bottom :2px solid $color_base;
         }
@@ -857,7 +867,7 @@ footer {
       display: inline;
       padding: 5px 0;
       &:hover {
-        border-bottom :2px solid $color_base;
+        border-bottom :2px solid $color_base !important;
       }
     }
   }
@@ -879,6 +889,9 @@ footer {
         }
       }
     }
+  }
+  .visual_main-wrapper {
+    padding: 0;
   }
   .visual_main {
     width: 960px;

@@ -1,4 +1,3 @@
-
 # BEGIN WordPress
 <IfModule mod_rewrite.c>
 
@@ -18,3 +17,13 @@ RewriteRule . index.php [L]
 </IfModule>
 
 # END WordPress
+
+<Files ~ "^\.(htaccess|htpasswd)$">
+deny from all
+</Files>
+AuthUserFile /home/users/1/main.jp-brooklyn-fukuoka/web/.htpasswd
+AuthGroupFile /dev/null
+AuthName "Please enter your ID and password"
+AuthType Basic
+require valid-user 
+order deny,allow

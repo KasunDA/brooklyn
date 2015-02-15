@@ -13,10 +13,10 @@
 <link href="/assets/css/util.css" rel="stylesheet" type="text/css">
 <link href="/assets/css/font.css" rel="stylesheet" type="text/css">
 <link href="/assets/css/base.css" rel="stylesheet" type="text/css">
+<link href="/assets/css/sublimeSlideshow.css" rel="stylesheet" type="text/css">
 <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="/favicon.ico">
 <script src="/assets/js/jquery-1.8.3.min.js"></script>
 <script src="/assets/js/jquery.tile.js"></script>
-<script src="/assets/js/common.js"></script>
 <script src="/assets/js/top.js"></script>
 <script src="//use.typekit.net/lxg8uzz.js"></script>
 <script>try{Typekit.load();}catch(e){}</script>
@@ -33,23 +33,37 @@
   ga('send', 'pageview');
 
 </script>
+</head>
 <body>
     <div class="container">
         <div class="visual">
             <div class="box_brooklyn box f_left">
-                <a href="/brooklyn/">BROOKLYN</a> 
+                <a href="/brooklyn/">BROOKLYN</a>
+                <ul class="box_bg box_bg-brooklyn">
+                  <li class="bg01"></li>
+                  <li class="bg02"></li>
+                  <li class="bg03"></li>
+                  <li class="bg04"></li>
+                  <li class="bg05"></li>
+                </ul>
             </div>
             <div class="box_lotus box f_right">
                 <a href="/lotus/">LOTUS</a>
+                <ul class="box_bg box_bg-lotus">
+                  <li class="bg01"></li>
+                  <li class="bg02"></li>
+                  <li class="bg03"></li>
+                  <li class="bg04"></li>
+                  <li class="bg05"></li>
+                </ul>
             </div>  
         </div>
         <footer>
-            <h1 class="h1_top">BROOKLYN GROOP</h1>
-            <ul class="list_shop">
+            <!-- <ul class="list_shop">
                 <li><a href="/brooklyn/">BROOKLYN</a></li>
                 <li><a href="/lotus/">LOTUS</a></li>
-            </ul>
-            <p class="copyright">&copy; BROOKLYN GROOP. All rights reserved.</p>             
+            </ul> -->
+            <p class="copyright">&copy; BROOKLYN All rights reserved.</p>
         </footer>
     </div>
 </body>

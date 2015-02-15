@@ -1,0 +1,13 @@
+Application Error(s) occurred in you website #WEBSITE.
+
+Please login to your Admin Dashboard and navigate to 
+the "Error Fix" menu to see the list of errors.
+
+Contact us to help you resolve the issues by simply replying 
+to this email with the word "HELP" and we will resolve the 
+errors as soon as possible.
+
+You will be notified as soon as the error(s) are fixed.
+
+------
+Your System ID: #SYSTEM_ID

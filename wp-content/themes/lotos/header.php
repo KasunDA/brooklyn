@@ -32,15 +32,23 @@
             <ul class="nav_sns">
                 <li class="nav_sns-rss"><a href="<?php echo home_url('/feed/') ?>" target=_blank><span class="icon-feed2"></span></a></li>
                 <li class="nav_sns-contact"><a href="<?php echo home_url('/contact/'); ?>"><span class="icon-envelop"></span></a></li>
-                <li class="nav_sns-twitter"><a href="http://twitter.com/share?count=horizontal&original_referer=<?php echo the_permalink(); ?>&text=<?php the_title(); ?>&url=<?php echo the_permalink(); ?>" onclick="window.open(encodeURI(decodeURI(this.href)), 'tweetwindow', 'width=550, height=450, personalbar=0, toolbar=0, scrollbars=1, resizable=1' ); return false;" target="_blank"><span class="icon-twitter"></span></a></li>
-                <li class="nav_sns-facebook"><a href="http://www.facebook.com/share.php?u=<?php the_title(); ?>" onclick="window.open(this.href, 'window', 'width=550, height=450,personalbar=0,toolbar=0,scrollbars=1,resizable=1'); return false;"><span class="icon-facebook"></span></a></li>
-                <li class="nav_sns-google"><a href="https://plus.google.com/share?url=<?php echo the_permalink(); ?>" onclick="window.open(this.href, 'Gwindow', 'width=650, height=450, menubar=no, toolbar=no, scrollbars=yes'); return false;"><span class="icon-google-plus"></span></a></li>
+                <li class="nav_sns-twitter"><a href="http://twitter.com/share?count=horizontal&original_referer=<?php echo home_url('/') ?>&text=<?php bloginfo('name'); ?>&url=<?php echo home_url('/') ?>" onclick="window.open(encodeURI(decodeURI(this.href)), 'tweetwindow', 'width=550, height=450, personalbar=0, toolbar=0, scrollbars=1, resizable=1' ); return false;" target="_blank"><span class="icon-twitter"></span></a></li>
+                <li class="nav_sns-facebook"><a href="http://www.facebook.com/share.php?u=<?php echo home_url('/') ?>" onclick="window.open(this.href, 'window', 'width=550, height=450,personalbar=0,toolbar=0,scrollbars=1,resizable=1'); return false;"><span class="icon-facebook"></span></a></li>
+                <li class="nav_sns-google"><a href="https://plus.google.com/share?url=<?php echo home_url('/') ?>" onclick="window.open(this.href, 'Gwindow', 'width=650, height=450, menubar=no, toolbar=no, scrollbars=yes'); return false;"><span class="icon-google-plus"></span></a></li>
             </ul>
         </nav>
     </section>
 </header>
 <?php if (is_front_page()): ?>
-<p class="visual_main"><img src="/assets/img/common/visual_brooklyn.png" width="960" alt=""></p>
+<div class="visual_main-wrapper">
+    <ul class="visual_main">
+        <li><img src="/assets/img/shop-top/visual_lotus01.png" width="960" alt=""></li>
+        <li><img src="/assets/img/shop-top/visual_lotus02.png" width="960" alt=""></li>
+        <li><img src="/assets/img/shop-top/visual_lotus03.png" width="960" alt=""></li>
+        <li><img src="/assets/img/shop-top/visual_lotus04.png" width="960" alt=""></li>
+        <li><img src="/assets/img/shop-top/visual_lotus05.png" width="960" alt=""></li>
+    </ul>
+</div>
 <?php endif; ?>
 <?php breadcrumb(); ?>
 

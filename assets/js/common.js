@@ -20,15 +20,6 @@ $(function(){
         $('body, html').animate({ scrollTop: 0 }, 500);
             return false;
     });
-    /*クリックボックス*/
-    // $(".clickbox").click(function(){
-    //      if($(this).find("a").attr("target")=="_blank"){
-    //          window.open($(this).find("a").attr("href"), '_blank');
-    //      }else{
-    //          window.location=$(this).find("a").attr("href");
-    //      }
-    //  return false;
-    //  });
     //スマホ時に電話リンク追加
     var ua = navigator.userAgent;
     if(ua.indexOf('iPhone') > 0 || ua.indexOf('Android') > 0){
@@ -37,7 +28,7 @@ $(function(){
             $(this).html($('<a class="inline">').attr('href', 'tel:' + str.replace(/-/g, '')).append(str + '</a>'));
         });
     }
-    $(window).bind("load resize", init);//ウィンドウが『読込み』もしくは『ウィンドウサイズ変更』された時、関数『init』を実行
+    $(window).on("load resize", init);//ウィンドウが『読込み』もしくは『ウィンドウサイズ変更』された時、関数『init』を実行
     function init(){//下記の処理を関数『init』として定義する
         var _width = $(window).width();//デバイス（ウィンドウ）幅を取得
         if(_width <= 768){

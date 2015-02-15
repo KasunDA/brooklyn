@@ -32,8 +32,7 @@
                 <?php
 
                     //チェックするURL
-                    $url = get_the_permalink();
-                    //$url = "http://creatorclip.info/2014/01/sns-btn-original-design/";  
+                    $url = get_the_permalink(); 
 
                     //ツイッター
                     //-------------------------------------------
@@ -88,7 +87,7 @@
                         </li>
                         <li class="sns_facebook">
                             <span class="count"><?php echo number_format($count_facebook) ?></span>
-                            <a href="http://www.facebook.com/share.php?u=<?php the_title(); ?>" onclick="window.open(this.href, 'window', 'width=550, height=450,personalbar=0,toolbar=0,scrollbars=1,resizable=1'); return false;"><span class="icon-facebook"></span></a>
+                            <a href="http://www.facebook.com/share.php?u=<?php echo the_permalink(); ?>" onclick="window.open(this.href, 'window', 'width=550, height=450,personalbar=0,toolbar=0,scrollbars=1,resizable=1'); return false;"><span class="icon-facebook"></span></a>
                         </li>
                         <li class="sns_google">
                             <span class="count"><?php echo number_format($count_google) ?></span>

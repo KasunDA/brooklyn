@@ -87,9 +87,7 @@ a:hover {
   display: block;
   width: 50%;
   height: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  position: relative;
   box-sizing: border-box;
 }
 .visual a {
@@ -109,7 +107,6 @@ a:hover {
 }
 
 .box_brooklyn {
-  background-image: url("../img/top/bg_brooklyn.png");
   border-right: 1px solid #fff;
 }
 .box_brooklyn a:hover {
@@ -118,11 +115,55 @@ a:hover {
 }
 
 .box_lotus {
-  background-image: url("../img/top/bg_lotus.png");
   border-left: 1px solid #fff;
 }
 .box_lotus a:hover {
   background-color: rgba(13, 69, 95, 0.8);
+}
+
+.box_bg li {
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  box-sizing: border-box;
+}
+
+.box_bg-brooklyn .bg01 {
+  background-image: url("../img/top/bg_brooklyn01.png");
+}
+.box_bg-brooklyn .bg02 {
+  background-image: url("../img/top/bg_brooklyn02.png");
+}
+.box_bg-brooklyn .bg03 {
+  background-image: url("../img/top/bg_brooklyn03.png");
+}
+.box_bg-brooklyn .bg04 {
+  background-image: url("../img/top/bg_brooklyn04.png");
+}
+.box_bg-brooklyn .bg05 {
+  background-image: url("../img/top/bg_brooklyn05.png");
+}
+
+.box_bg-lotus .bg01 {
+  background-image: url("../img/top/bg_lotus01.png");
+}
+.box_bg-lotus .bg02 {
+  background-image: url("../img/top/bg_lotus02.png");
+}
+.box_bg-lotus .bg03 {
+  background-image: url("../img/top/bg_lotus03.png");
+}
+.box_bg-lotus .bg04 {
+  background-image: url("../img/top/bg_lotus04.png");
+}
+.box_bg-lotus .bg05 {
+  background-image: url("../img/top/bg_lotus05.png");
 }
 
 /* .ratio-1_1:before {
@@ -151,7 +192,8 @@ footer {
   bottom: 0;
   width: 100%;
   text-align: center;
-  padding: 30px 0;
+  height: 30px;
+  background: #fff;
 }
 
 .list_shop {
@@ -188,6 +230,7 @@ h2, h3 {
   font-size: 9px;
   font-size: 0.9rem;
   text-align: center;
+  line-height: 30px;
 }
 
 @media screen and (max-width: 979px) {

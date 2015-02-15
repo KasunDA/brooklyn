@@ -44,13 +44,8 @@ a {
     display: block;
     width: 50%;
     height: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    box-sizing:border-box;
-    &:hover{
-
-    }
+    position: relative;
+    box-sizing: border-box;
   }
   a {
     display: block;
@@ -67,7 +62,6 @@ a {
   }
 }
 .box_brooklyn {
-  background-image: url("../img/top/bg_brooklyn.png");
   border-right: 1px solid #fff;
   a {
     &:hover {
@@ -77,13 +71,41 @@ a {
   }
 }
 .box_lotus {
-  background-image: url("../img/top/bg_lotus.png");
+  //background-image: url("../img/top/bg_lotus01.png");
   border-left: 1px solid #fff;
   a {
     &:hover {
       @include background-color_lotus(0.8);
     }
   }
+}
+.box_bg {
+  li {
+    position: absolute;
+    z-index:-1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-sizing:border-box;   
+  }
+}
+.box_bg-brooklyn {
+  .bg01 { background-image: url("../img/top/bg_brooklyn01.png"); }
+  .bg02 { background-image: url("../img/top/bg_brooklyn02.png"); }
+  .bg03 { background-image: url("../img/top/bg_brooklyn03.png"); }
+  .bg04 { background-image: url("../img/top/bg_brooklyn04.png"); }
+  .bg05 { background-image: url("../img/top/bg_brooklyn05.png"); }
+}
+.box_bg-lotus {
+  .bg01 { background-image: url("../img/top/bg_lotus01.png"); }
+  .bg02 { background-image: url("../img/top/bg_lotus02.png"); }
+  .bg03 { background-image: url("../img/top/bg_lotus03.png"); }
+  .bg04 { background-image: url("../img/top/bg_lotus04.png"); }
+  .bg05 { background-image: url("../img/top/bg_lotus05.png"); }
 }
 
 /* .ratio-1_1:before {
@@ -113,7 +135,8 @@ footer {
   bottom:0;
   width: 100%;
   text-align: center;
-  padding:30px 0 ;
+  height:30px;
+  background: #fff;
 }
 .list_shop {
   text-align: center;
@@ -142,6 +165,7 @@ h2 , h3 {
 .copyright {
   @include font-size(0.9);
   text-align: center;
+  line-height:30px;
 }
 @media screen and (max-width: 979px) {
   /* 979px以下用（タブレット用）の記述 */

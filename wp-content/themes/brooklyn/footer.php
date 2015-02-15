@@ -9,7 +9,7 @@
                 <li><a href="/brooklyn/blog/"><span class="icon-triangle-right"></span>Blog</a></li>
                 <li><a href="/brooklyn/shop-info/"><span class="icon-triangle-right"></span>Shop Info</a></li>
                 <li><a href="/brooklyn/list-brands/"><span class="icon-triangle-right"></span>List of brands</a></li>
-                <li><a href="/brooklyn/contact/"><span class="icon-triangle-right"></span>MAIL</a> </li>
+                <li><a href="/brooklyn/contact/"><span class="icon-triangle-right"></span>Contact</a> </li>
             </ul>
             <ul class="block_footer-lotus">
                 <li><a href="/lotus/"><span class="icon-triangle-right"></span>LOTUS TOP</a> </li>
@@ -17,10 +17,10 @@
                 <li><a href="/lotus/blog/"><span class="icon-triangle-right"></span>Blog</a></li>
                 <li><a href="/lotus/shop-info/"><span class="icon-triangle-right"></span>Shop Info</a></li>
                 <li><a href="/lotus/list-brands/"><span class="icon-triangle-right"></span>List of brands</a></li>
-                <li><a href="/lotus/contact/"><span class="icon-triangle-right"></span>MAIL</a> </li>
+                <li><a href="/lotus/contact/"><span class="icon-triangle-right"></span>Contact</a> </li>
             </ul>   
         </div>
-        <p class="txt_copy">&copy; BROOKLYN GROOP. All rights reserved.</p>
+        <p class="txt_copy">&copy; BROOKLYN All rights reserved.</p>
     </div>
 </footer>
 <?php wp_footer(); ?>

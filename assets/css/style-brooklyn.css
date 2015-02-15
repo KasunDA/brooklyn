@@ -338,8 +338,21 @@ article h4:before {
   background: #dd4b39;
 }
 
+.visual_main-wrapper {
+  padding: 0 20px;
+}
+
+.visual_main {
+  position: relative;
+}
+.visual_main li {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
 .visual_main img {
   width: 100%;
+  height: auto;
 }
 
 .list {
@@ -984,7 +997,7 @@ footer {
   .nav_global li.current-menu-item a {
     border-bottom: 2px solid #333333;
   }
-  .nav_global li.current-post-parent a {
+  .nav_global li.current-post-ancestor a {
     border-bottom: 2px solid #333333;
   }
   .nav_global a {
@@ -993,7 +1006,7 @@ footer {
     padding: 5px 0;
   }
   .nav_global a:hover {
-    border-bottom: 2px solid #333333;
+    border-bottom: 2px solid #333333 !important;
   }
 
   .nav_sns {
@@ -1014,6 +1027,10 @@ footer {
   }
   .nav_sns li a:hover {
     transform: scale(1.3, 1.3);
+  }
+
+  .visual_main-wrapper {
+    padding: 0;
   }
 
   .visual_main {

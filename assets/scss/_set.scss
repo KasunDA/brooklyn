@@ -78,3 +78,43 @@ $color_lotus: rgba(13, 69, 95, 1);
 @mixin mincho {
   font-family: "游明朝","YuMincho","ヒラギノ明朝 ProN W6", "HiraMinProN-W6", "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝", serif;
 }
+
+// @ Vendor Prefix
+// -------------------------
+$prefixList: -webkit-, -moz-, -ms-, -o-, null;
+
+// @ transition
+// -------------------------
+@mixin my_transition($value...) {
+  @each $prefix in $prefixList {
+    #{$prefix}transition: $value;
+  }
+}
+
+// @ keyframes
+// -------------------------
+@mixin keyframes($name){
+  @-webkit-keyframes $name {
+    @content;
+  }
+  @-moz-keyframes $name {
+    @content;
+  }
+  @-ms-keyframes $name {
+    @content;
+  }
+  @-o-keyframes $name {
+    @content;
+  }
+  @keyframes $name {
+    @content;
+  }
+}
+
+// @ animation
+// -------------------------
+@mixin animation($name, $duration, $timing, $delay, $count, $direction: null) {
+  @each $prefix in $prefixList {
+      #{$prefix}#{animation}: $name $duration $timing $delay $count $direction;
+  }
+}

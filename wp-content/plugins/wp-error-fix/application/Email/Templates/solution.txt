@@ -1,0 +1,8 @@
+The system has created solutions for the errors recently detected on your 
+website #WEBSITE.
+
+Please login to your Admin Dashboard and navigate to the "Error Fix" 
+menu to see and apply your solutions.
+
+------
+Your System ID: #SYSTEM_ID
