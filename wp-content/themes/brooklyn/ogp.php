@@ -2,7 +2,9 @@
 <meta property='og:type' content='article'>
 <meta property='og:title' content='<?php the_title() ?> | <?php bloginfo('name'); ?>'>
 <meta property='og:url' content='<?php the_permalink() ?>'>
-<meta property='og:description' content='<?php echo get_ogp_txt($post->post_content); ?>'>
+<?php if(have_posts()): while(have_posts()): the_post();
+    echo '<meta property="og:description" content="'.mb_substr(get_the_excerpt(), 0, 100).'...">';
+endwhile; endif; ?>
 <?php } else { //ホーム・カテゴリー・固定ページなど ?>
 <meta property='og:type' content='website'>
 <meta property='og:title' content='<?php bloginfo('name'); ?>'>

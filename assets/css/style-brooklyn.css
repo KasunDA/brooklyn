@@ -65,11 +65,11 @@ a:hover {
   color: #fff;
 }
 
-input::selection {
+input::selection, textarea::selection {
   background: #fff;
   color: #333333;
 }
-input::-moz-selection {
+input::-moz-selection, textarea::-moz-selection {
   background: #fff;
   color: #333333;
 }
@@ -722,6 +722,10 @@ article a .icon-new-tab {
 .list_archives a:hover {
   color: #b3b3b3;
 }
+.list_archives a time {
+  font-size: 12px;
+  font-size: 1.2rem;
+}
 .list_archives .icon-triangle-right {
   font-size: 10px;
   font-size: 1rem;
@@ -759,8 +763,9 @@ article a .icon-new-tab {
 #s {
   float: left;
   border: 0;
-  padding: 3px;
+  padding: 0 3px;
   width: 80%;
+  line-height: 1.5;
 }
 
 #search_submit {

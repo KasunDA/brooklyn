@@ -342,6 +342,19 @@
 .ml95 { margin-left: 95px !important; }   .pt95 { padding-left: 95px !important; }
 .ml100{ margin-left:100px !important; }   .pl100{ padding-left:100px !important; }
 
+/* 古いIEへ警告 */ 
+.ie-prompt {
+  text-align: center;
+  margin: 0px auto;
+  padding: 10px;
+  background-color:#ccc;
+  color: #000;
+}
+.ie-prompt a { 
+  color: #000;
+  text-decoration: underline;
+}
+
 /* over */
 .opacity:hover {
   filter: alpha(opacity=70);

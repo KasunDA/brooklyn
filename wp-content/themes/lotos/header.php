@@ -1,4 +1,12 @@
 <?php get_template_part('facebook'); ?>
+<!--[if lt IE 9]>
+<div class="ie-prompt">
+    <p>お使いのブラウザはバージョンが古いため、サイトを快適にご利用いただけないかもしれません。<br>
+        <a href="http://www.whatbrowser.org/intl/ja/">新しいブラウザをお試しできます。
+            ブラウザは無料、インストールも簡単です。</a>
+    </p>
+</div>
+<![endif]-->
 <header>
     <div class="header_top">
         <div class="header_top-wrapper">
@@ -17,7 +25,7 @@
         <h1 class="ttl_h2"><a href="<?php echo home_url('/') ?>">LOTUS</a></h1>
         <p class="nav_menu"><span class="icon-menu"></span></p>
         <nav class="header_nav"> 
-            <form role="search" method="get" id="searchform" class="searchform nav_search" action="http://brooklyn/brooklyn/">
+            <form role="search" method="get" id="searchform" class="searchform nav_search" action="<?php echo home_url('/') ?>">
                 <div>
                     <input type="text" placeholder="Search..." name="s" id="s">
                     <button type="submit" id="search_submit"><span class="icon-search"></span></button>
