@@ -35,6 +35,14 @@
 </script>
 </head>
 <body>
+    <!--[if lt IE 9]>
+    <div class="ie-prompt">
+      <p>お使いのブラウザはバージョンが古いため、サイトを快適にご利用いただけないかもしれません。<br>
+          <a href="http://www.whatbrowser.org/intl/ja/">新しいブラウザをお試しできます。
+              ブラウザは無料、インストールも簡単です。</a>
+      </p>
+    </div>
+    <![endif]-->
     <div class="container">
         <div class="visual">
             <div class="box_brooklyn box f_left">

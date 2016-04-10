@@ -30,7 +30,7 @@ a {
   background: $color_brooklyn;
   color: #fff;
 }
-input {
+input , textarea {
   &::selection {
     background: #fff;
     color: $color_base;;
@@ -617,6 +617,9 @@ article {
     &:hover {
       color:lighten( $color_base, 50% ) ;
     }
+    time {
+      @include font-size(1.2);
+    }
   }
   .icon-triangle-right {
     @include font-size(1.0);
@@ -648,7 +651,7 @@ article {
 #s {
   float: left;
   border: 0;
-  padding: 3px;
+  padding: 0 3px;
   width: 80%;
 }
 #search_submit {

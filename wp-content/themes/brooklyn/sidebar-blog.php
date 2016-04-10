@@ -8,7 +8,7 @@
                     while(have_posts()):
                         the_post();
             ?>
-                        <li><a href="<?php the_permalink() ?>"><span class="icon-triangle-right"></span><?php the_title(); ?></a></li>
+                        <li><a href="<?php the_permalink() ?>"><span class="icon-triangle-right"></span><time datetime="<?php echo the_time('Y-m-d'); ?>"><?php the_time('Y.m.d'); ?></time><br><?php the_title(); ?></a></li>
             <?php
                     endwhile;
                 endif;
