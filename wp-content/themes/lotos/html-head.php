@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="ja">
+<?php if(is_single()){ // 投稿記事 ?>
 <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+<?php } else { //ホーム・カテゴリー・固定ページなど ?>
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# website: http://ogp.me/ns/website#">
+<? } ?>
 <meta charset="utf-8">
 <?php if (is_front_page()): ?>
 <title><?php bloginfo('name'); ?></title>

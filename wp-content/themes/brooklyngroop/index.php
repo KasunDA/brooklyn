@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# website: http://ogp.me/ns/website#">
 <meta charset="utf-8">
 <title>福岡市にあるセレクトショップ BROOKLYN(ブルックリン) LOTUS(ロータス)</title>
 <meta name="Keywords" content="ロータス,ブルックリン,アメカジ,ファッション,服屋,福岡市,中央区,今泉,西新">
@@ -8,6 +8,13 @@
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
 <meta name="format-detection" content="telephone=no">
 <meta name="format-detection" content="email=no">
+<meta property='og:type' content='website'>
+<meta property='og:title' content='福岡市にあるセレクトショップ BROOKLYN(ブルックリン) LOTUS(ロータス)'>
+<meta property='og:url' content='http://brooklyn-fukuoka.com/'>
+<meta property='og:description' content='福岡市早良区西新のBROOKLYN(ブルックリン)と中央区今泉にあるLOTUS（ロータス）の総合TOPページです。'>
+<meta property='og:site_name' content='福岡市にあるセレクトショップ BROOKLYN(ブルックリン) LOTUS(ロータス)'>
+<meta property="og:image" content="http://brooklyn-fukuoka.com/assets/img/common/ogp.png">
+<meta property="fb:app_id" content="415826318570506" >
 <link rel="canonical" href="http://brooklyn-fukuoka.com/">
 <link href="/assets/css/normalize.css" rel="stylesheet" type="text/css">
 <link href="/assets/css/util.css" rel="stylesheet" type="text/css">
